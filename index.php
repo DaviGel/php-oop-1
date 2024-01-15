@@ -20,7 +20,6 @@ class Movie
   public function getGenreInfo($_genres) {
     $result = '';
     foreach ($_genres as $index=>$genre) {
-      
       $result = $index === 0 ? $result .= $genre : $result .= " - $genre";
     }
     return $result;
